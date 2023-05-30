@@ -1,10 +1,24 @@
-## Agile Model
+## Document Agile, Scrum
+_Tìm hiểu một số kiến thức cơ bản về Agile, Scrum_
+[I. Agile Model](#i-agile-model)
+[1. 4 giá trị cốt lõi](#1-4-giá-trị-cốt-lõi)
+[2. 12 nguyên tắc trong mô hình Agile](#2-12-nguyên-tắc-trong-mô-hình-agile)
+[3. Agile Estimation](#3-agile-estimation)
+[II. Scrum](#ii-scrum)
+[1. Scrum Team](#1-scrum-team)
+[2. Scrum Values](#2-scrum-values)
+[3. Scrum Events](#3-scrum-events)
+[4. Scrum Terms & Artifacts](#4-scrum-terms--artifacts)
+[III. Kanban](#iiikanban--xp)
+[1. Kanban](#1-kanban)
+[2. Extreme Programming](#2-extreme-programming)
+## I. Agile Model
 - Agile là mô hình phát triển phần mềm khuyến khích việc lập kế hoạch thích ứng, phát triển tăng dần, chuyển giao sớm, và cải tiến liên tục.
 
 - Agile có nhiều framework: Scrum, Kanban, Dynamic System Development Method (DSDM), Feature-driven development, ...
 
 
-#### 4 giá trị cốt lõi ####
+#### 1. 4 giá trị cốt lõi
 - **Cá nhân và sự tương tác** hơn là **quy trình và công cụ**
 - **Phần mềm chạy tốt** hơn là **tài liệu đầy đủ**
 - **Cộng tác với khách hàng** hơn là **đàm phán hợp đồng**
@@ -12,7 +26,7 @@
 Đó là, trong khi các mục bên phải có giá trị, chúng tôi coi trọng các mục **bên trái** hơn.
 
 
-#### 12 nguyên tắc trong mô hình Agile ####
+#### 2. 12 nguyên tắc trong mô hình Agile
 1. Thoả mãn yêu cầu của khách hàng thông qua việc giao sản phẩm sớm và liên tục.
 2. Chào đón việc thay đổi yêu cầu, thậm chí là những thay đổi yêu cầu muộn.
 3. Giao phần mềm triển khai được cho khách hàng một cách thường xuyên.
@@ -27,12 +41,12 @@
 12. Thường xuyên nhìn nhận đánh giá làm sao để hiệu quả hơn, từ đó thay đổi và thích ứng.
 
 
-#### Agile Estimation ####
-**Ý nghĩa**: Agile Estimation là quá trình ước lượng thời gian, công việc, và tài nguyên cần thiết để hoàn thành các yêu cầu và nhiệm vụ trong môi trường Agile. Trong Agile, ước lượng được thực hiện để xác định khối lượng công việc, quy mô dự án, và lập lịch phát triển.
+#### 3. Agile Estimation 
+**3.1 Ý nghĩa**: Agile Estimation là quá trình ước lượng thời gian, công việc, và tài nguyên cần thiết để hoàn thành các yêu cầu và nhiệm vụ trong môi trường Agile. Trong Agile, ước lượng được thực hiện để xác định khối lượng công việc, quy mô dự án, và lập lịch phát triển.
 
-**Mục tiêu**: cung cấp một cái nhìn tổng quan về tài nguyên và thời gian cần thiết để hoàn thành các nhiệm vụ. Điều này giúp định kỳ đánh giá tiến độ, phân chia công việc và ưu tiên, và đảm bảo rằng dự án được tiến hành theo một phương pháp linh hoạt và hiệu quả.
+**3.2 Mục tiêu**: cung cấp một cái nhìn tổng quan về tài nguyên và thời gian cần thiết để hoàn thành các nhiệm vụ. Điều này giúp định kỳ đánh giá tiến độ, phân chia công việc và ưu tiên, và đảm bảo rằng dự án được tiến hành theo một phương pháp linh hoạt và hiệu quả.
 
-**Các đặc điểm cơ bản** của Agile Estimation:
+**3.3 Các đặc điểm cơ bản** của Agile Estimation:
 - Không thể chính xác 100%
 - Đơn vị: giờ hoặc story point
 - Việc ai làm thì người đó ước tính
@@ -40,16 +54,16 @@
 - Cần được rà soát và cập nhật thường xuyên.
 
 
-## Scrum
+## II. Scrum
 - Scrum là một framework Agile được sử dụng phổ biến để phát triển sản phẩm, đặc biệt là phần mềm. Trong Scrum, các dự án thực hiện theo các Sprint lặp đi lặp lại. Mỗi Sprint thường kéo dài từ 2-4 tuần.
-#### Scrum Team
+#### 1. Scrum Team
 Nhóm scrum có **ba** vai trò:
 - **Developers**: Bao gồm các thành viên tham gia trực tiếp vào quá trình phát triển sản phẩm (Architect, Dev, QA, Techlead, …). Nhóm có tính chất cross-functional, self-organizing và linh hoạt. Số lượng thành viên của Scrum team nên không quá 10 người.
 - **Product Owner**: Đại diện cho tiếng nói của khách hàng hoặc cộng đồng người dùng, chịu trách nhiệm làm việc với nhóm người dùng để tối ưu hóa giá trị của công việc Scrum team thực hiện.
 - **Scrum Master**: Chuyên gia về Scrum và có thể coaching về các giá trị, nguyên tắc, quy trình Scrum. Scrum Master không có quyền để đưa ra các quyết định chiến lược về sản phẩm nhưng phải chịu trách nhiệm về quy trình Scrum và tính hiệu quả.
 
 
-#### Scrum values
+#### 2. Scrum values
 - **Openness**: quy trình minh bạch và cởi mở giữa team và các bên liên quan
 - **Focus**: Phương pháp tiếp cận lặp đi lặp lại và giao sản phẩm đúng thời hạn
 - **Courage**: chấp nhận rủi ro và tìm ra giải pháp tối ưu hóa 
@@ -57,13 +71,14 @@ Nhóm scrum có **ba** vai trò:
 - **Respect**: tôn trọng đồng nghiệp, khách hàng, người dùng
 
 
-#### Scrum Events
+#### 3. Scrum Events
 Scrum events bao gồm các hoạt động và cuộc họp được tổ chức định kỳ trong suốt quá trình phát triển dự án để đảm bảo sự phối hợp, kiểm soát và đánh giá tiến độ công việc. Dưới đây là một số Scrum events chính:
 - **Sprint Planning**: Development team thiết kế hệ thống và lên danh sách các công việc cần làm. Đối với mỗi hạng mục trong danh sách đã lựa chọn, team sẽ tách thành các công việc cụ thể. Các công việc này thường đủ nhỏ để hoàn thành trong vòng một ngày hoặc ít hơn. Nếu Development Team thấy rằng lượng công việc vừa lựa chọn là quá nhiều/ít so với khả năng, có thể thương lượng với Product Owner để loại bỏ bớt hoặc chọn thêm các hạng mục khác. 
 - **Daily Scrum**: Daily meeting ngắn 15 phút được tiến hành mỗi ngày. Cuộc họp này giúp cập nhật công việc hàng ngày và giúp nhóm đi đúng hướng. Tất cả các thành viên trong Development team được yêu cầu tham gia.
 - **Sprint Review**: Cuối mỗi sprint, Product Owner trình bày lại Mục tiêu Sprint, Development team trình bày kết quả đã hoàn thành & demo sản phẩm. Căn cứ vào kết quả Sprint, Product Backlog có thể được điều chỉnh nếu cần. Sprint Review thường kéo dài khoảng 2 tiếng.
 - **Sprint Retrospective**: xác định nhóm đã làm tốt và không tốt những gì, đưa ra giải pháp và lên kế hoạch thực hiện các cải tiến để đạt kết quả tốt trong các sprint sau. Cuộc họp này diễn ra sau Sprint Review và trước Sprint Planning tiếp theo, thường kéo dài khoảng 1.5 tiếng.
-#### Scrum Terms & Artifacts
+
+#### 4. Scrum Terms & Artifacts
 **Scrum artifact** là các thành phần quan trọng trong quá trình phát triển dự án theo Scrum, một phương pháp quản lý dự án theo Agile. Các artifact này giúp nhóm Scrum duy trì thông tin và trạng thái của dự án, và cung cấp một cơ sở để giao tiếp và theo dõi tiến độ. Dưới đây là một số Scrum artifact chính:
 - **Product Backlog**: Là một danh sách có thứ tự các yêu cầu, chức năng và các công việc cần hoàn thành trong dự án. Product Backlog được tạo và quản lý bởi Product Owner và là nguồn cung cấp chính cho việc lập kế hoạch và ưu tiên công việc trong các sprint.
 - **Sprint Backlog**: Là danh sách các user story và công việc được nhóm phát triển cam kết hoàn thành trong mỗi sprint. Sprint Backlog được tạo ra từ Product Backlog trong quá trình Sprint Planning và được cập nhật trong suốt quá trình sprint.
@@ -73,9 +88,11 @@ Scrum events bao gồm các hoạt động và cuộc họp được tổ chức
 
 **Other terms**: Release Planning, Backlog refinement, Sprint/Release Burndown chart, Definition of Done, Acceptance Criteria, Pair-programming, Test-Driven DeveIopment (TDD), Behavior-Driven Development (BDD), Mockup, Continuous Integration - Continuous Delivery (CI/CD)
 
-## Kanban & XP
-**KanBan**: là một Framework phổ biến được sử dụng để triển khai phát triển phần mềm nhanh và DevOps . Nó đòi hỏi khả năng giao tiếp theo thời gian thực và tính minh bạch đầy đủ của công việc. Các mục công việc được thể hiện trực quan trên bảng kanban, cho phép các thành viên trong nhóm xem trạng thái của mọi công việc bất cứ lúc nào.
+## III.Kanban & XP
+####1. KanBan
+Là một Framework phổ biến được sử dụng để triển khai phát triển phần mềm nhanh và DevOps . Nó đòi hỏi khả năng giao tiếp theo thời gian thực và tính minh bạch đầy đủ của công việc. Các mục công việc được thể hiện trực quan trên bảng kanban, cho phép các thành viên trong nhóm xem trạng thái của mọi công việc bất cứ lúc nào.
 
-**XP(Extreme Programming)**: là một Framework phát triển phần mềm linh hoạt nhằm tạo ra phần mềm chất lượng cao hơn và chất lượng cuộc sống cao hơn cho nhóm phát triển</br>
+####2. Extreme Programming
+Là một Framework phát triển phần mềm linh hoạt nhằm tạo ra phần mềm chất lượng cao hơn và chất lượng cuộc sống cao hơn cho nhóm phát triển</br>
 
 Cả Kanban và Extreme Programming đều đưa ra những cách tiếp cận có giá trị để quản lý và thực hiện các dự án Agile, nhưng chúng có những điểm nhấn và lĩnh vực trọng tâm khác nhau. Kanban đặc biệt hiệu quả để trực quan hóa và tối ưu hóa quy trình làm việc, trong khi XP nhấn mạnh vào thực hành kỹ thuật và cộng tác nhóm. Các nhóm có thể chọn áp dụng một hoặc cả hai cách tiếp cận này dựa trên nhu cầu và sở thích cụ thể.
