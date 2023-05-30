@@ -78,6 +78,7 @@ def merge(left, right):
     result = []
     i = 0
     j = 0
+    
     #check index left and right array
     while (i < len(left) and j < len(right)):
         if (left[i] <= right[j]):
