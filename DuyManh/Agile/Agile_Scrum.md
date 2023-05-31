@@ -109,7 +109,7 @@ Kanban là một trong những phương pháp phát triển phần mềm phổ b
 
 **Phân phối liên tục(CD):** là phương pháp thường xuyên phát hành công việc cho khách hàng. Tích hợp liên tục (CI)  là thực hành tự động xây dựng và thử nghiệm mã tăng dần trong ngày. Chúng cùng nhau tạo thành một quy trình CI/CD cần thiết cho các nhóm phát triển (đặc biệt là các nhóm DevOps) để vận chuyển phần mềm nhanh hơn trong khi vẫn đảm bảo chất lượng cao.
 
-####2. Extreme Programming
+#### 2. Extreme Programming
 Extreme Programming(XP) Là một Framework phát triển phần mềm linh hoạt nhằm tạo ra phần mềm chất lượng cao hơn và chất lượng cuộc sống cao hơn cho nhóm phát triển . XP là Framework cụ thể nhất trong số các khung linh hoạt liên quan đến các thực tiễn kỹ thuật phù hợp để phát triển phần mềm.
 
 
