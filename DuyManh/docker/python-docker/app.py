@@ -4,14 +4,21 @@ from datetime import datetime
 from flask_migrate import Migrate
 app = Flask(__name__)
 
-# config database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///C:/Users/MANH/Documents/GitHub/Thuc-tap-2023/DuyManh/python/flask/templates/test.db'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:12345678@3306/test'
+# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = mysql.connector.connect(
+    host="127.0.0.1",
+    user="root",
+    password="123456"
+)
 
 # config migrate
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 class Todo(db.Model):
+    __tablename__ = 'todo'
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(200), nullable=False)
     completed = db.Column(db.Integer, default=0)
@@ -27,9 +34,8 @@ class Todo(db.Model):
             'date_created': self.date_created
         }
         
-with app.app_context():
-    db.create_all()
-
+db.init_app(app)
+        
 def bubble_sort(tasks):
     n = len(tasks)
     for i in range(n - 1):
@@ -96,4 +102,4 @@ def update(id):
         return render_template('update.html', task=task)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True) 
