@@ -2,19 +2,14 @@ from flask import Flask, render_template, request, redirect, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from flask_migrate import Migrate
+
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:12345678@127.0.0.1/mytestdb'
 
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:12345678@3306/test'
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
-db = mysql.connector.connect(
-    host="127.0.0.1",
-    user="root",
-    password="123456"
-)
+# Create SQLAlchemy instance
+db = SQLAlchemy(app)
 
 # config migrate
-db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 class Todo(db.Model):
@@ -24,9 +19,14 @@ class Todo(db.Model):
     completed = db.Column(db.Integer, default=0)
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
 
+    def __init__(self, content, completed, date_created):
+        self.content = content
+        self.completed = completed
+        self.date_created = date_created
+        
     def __repr__(self):
         return '<Task %r>' % self.id
-
+    
     def to_dict(self):
         return {
             'id': self.id,
@@ -34,7 +34,10 @@ class Todo(db.Model):
             'date_created': self.date_created
         }
         
+        
 db.init_app(app)
+with app.app_context():
+        db.create_all()
         
 def bubble_sort(tasks):
     n = len(tasks)
