@@ -2,6 +2,21 @@
 
 {% block head %}
 <title>Task Master</title>
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+</style>
 {% endblock %}
 
 {% block body %}
@@ -12,13 +27,17 @@
     {% else %}
         <table>
             <tr>
-                <td>Task</td>
-                <td>Added</td>
+                <td>Title</td>
+                <td>Content</td>
+                <td>Priority</td>
+                <td>Date Update</td>
                 <td>Actions</td>
             </tr>
-            {% for task in tasks %}
+            {% for task in tasks|default([]) %}
                 <tr>
+                    <td>{{ task.title }}</td>
                     <td>{{ task.content }}</td>
+                    <td>{{ task.priority }}</td>
                     <td>{{ task.date_created.date() }}</td>
                     <td>
                         <a href="/delete/{{ task.id }}">Delete</a>
@@ -32,12 +51,13 @@
 
     <br>    
 
-    <form action="/" method="post">
-        <input type="text" name="content" id="content">
+    <form action="/add" method="get">
+        <input type="hidden" name="add" value="true">
         <input type="submit" value="Add Task">
     </form>
     <br>
     <form action="/" method="post">
+        <input type="text" name="lists" value="{{ lists|join(',') }}">
         <input type="hidden" name="sort" value="true">
         <input type="submit" value="Sort">
     </form>
